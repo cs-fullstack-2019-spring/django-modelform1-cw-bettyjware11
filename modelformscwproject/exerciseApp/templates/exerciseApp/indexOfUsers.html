@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Blog Users</h1>
+<!--post method keeps info out of url-->
+<form method="post">
+    <!--form.as_p...get an instance of databound form and injects that object with a key-->
+    <!--puts fields on another line...for each on it wraps in a <p tag-->
+    {{ userform.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Submit">
+
+</form>
+
+
+
+
+</body>
+</html>
